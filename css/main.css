@@ -343,6 +343,95 @@ img {
   padding: 0 20px;
 }
 
+ contact
+.contact__content {
+  text-align: center;
+}
+
+.contact__text {
+  margin-top: 145px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #263238;
+}
+
+.contact__title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 43px;
+  color: #263238;
+}
+
+.contact__form {
+  margin-top: 60px;
+}
+
+.contact__form-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact__input-name {
+  display: block;
+  padding: 15px 170px 15px 20px;
+  background: #F8F8F8;
+  border: 1px solid #EBEBEB;
+  box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.05), inset 4px 4px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+.contact__number {
+  display: block;
+}
+
+.contact__span-styal {
+  color: #feab38;
+}
+
+.contact__span-number {
+  margin-right: -15px;
+  padding: 15px 20px;
+  background: #F8F8F8;
+  border: 1px solid #EBEBEB;
+  border-right: none;
+  box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.05), inset 4px 4px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+.contact__input-number {
+  padding: 15px 100px 15px 20px;
+  background: #F8F8F8;
+  border: 1px solid #EBEBEB;
+  border-left: none;
+  box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.05), inset 4px 4px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+.contact__textarena {
+  max-width: 800px;
+  text-align: left;
+}
+
+.contact__form-text {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.contact__textarea {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-left: 10px;
+  display: block;
+  background: #F8F8F8;
+  border: 1px solid #EBEBEB;
+  box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.05), inset 4px 4px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+
  services
 services
 .services {
@@ -457,8 +546,7 @@ services
   }
   .services__item {
     margin-bottom: 20px;
-=======
-=======
+
 hero
  hero
 .hero-section {
@@ -861,4 +949,5 @@ main
  main
  main
   }
+main
 }/*# sourceMappingURL=main.css.map */
