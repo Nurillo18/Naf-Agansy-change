@@ -310,11 +310,14 @@ template {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -334,7 +337,139 @@ img {
 }
 
 .container {
+  width: 100%;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 0 20px;
-  max-width: __px;
+}
+
+.site-header {
+  background: #FFFFFF;
+  border-bottom: 1px solid rgba(25, 28, 47, 0.4);
+}
+
+.header-inner {
+  padding: 28px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.header__navbar {
+  max-width: 1050px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__list {
+  max-width: 680px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__link {
+  transition: 0.3s;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: rgba(25, 28, 47, 0.6);
+}
+
+.header__link:hover {
+  color: rgb(25, 28, 47);
+}
+
+.child {
+  color: black;
+}
+
+.header__number-link {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  color: black;
+}
+
+.header__number-link:hover {
+  color: rgba(0, 0, 0, 0.539);
+}
+
+.header__number-span {
+  color: rgba(25, 28, 47, 0.7);
+}
+
+.header__number-span:hover {
+  color: black;
+}
+
+.header__button {
+  display: inline-block;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0.8px solid rgba(25, 28, 47, 0.4);
+  border-radius: 8px;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.header__button:hover {
+  border: 0.8px solid rgba(25, 28, 47, 0.4);
+  background-color: rgba(25, 28, 47, 0.4);
+}
+
+.header__menu {
+  display: none;
+}
+
+.header__button-img {
+  margin-right: 5px;
+  margin-top: -2px;
+}
+
+@media only screen and (max-width: 1220px) {
+  .header__list {
+    max-width: 550px;
+  }
+}
+@media only screen and (max-width: 1151px) {
+  .header__list {
+    display: none;
+  }
+  .header__navbar {
+    max-width: 340px;
+  }
+  .header__menu {
+    background-color: transparent;
+    border: none;
+    display: block;
+  }
+  .header__number-link {
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header__number-link {
+    display: none;
+  }
+  .header__navbar {
+    width: 30px;
+  }
+  .header__button {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
