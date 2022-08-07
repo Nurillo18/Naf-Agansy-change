@@ -1,0 +1,133 @@
+.services {
+    padding: 58px 0;
+
+    &__title {
+        margin-bottom: 40px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 62px;
+        color: #191C2F;
+    }
+
+    &__title--span {
+        position: relative;
+        display: inline-block;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #37474F;
+    }
+
+    &__title--span::before {
+        position: absolute;
+        top: 10px;
+        left: 85px;
+        width: 35px;
+        height: 2px;
+        background-color: #37474f;
+        content: "";
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+        max-width: 420px;
+        min-height: 282px;
+        margin-bottom: 50px;
+        padding: 0 28px;
+        padding-top: 125px;
+        text-align: center;
+        background-color: rgba(35, 4, 157, 0.03);
+        border: 1px solid #FEAB38;
+        border-radius: 10px;
+    }
+
+    &__item::before {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 30px;
+        width: 82px;
+        height: 82px;
+        border-radius: 50%;
+        content: "";
+    }
+
+    &__item1::before {
+        background-image: url("../../images/services-img1.png");
+    }
+
+    &__item2::before {
+        background-image: url("../../images/services-img1.png");
+    }
+
+    &__item3::before {
+        background-image: url("../../images/services-img2.png");
+    }
+
+    &__item4::before {
+        background-image: url("../../images/services-img3.1.png");
+    }
+
+    &__item5::before {
+        background-image: url("../../images/services-img4.png");
+    }
+    
+    &__item6::before {
+        background-image: url("../../images/services-img5.png");
+    }
+
+    &__item7::before {
+        background-image: url("../../images/services-img6.png");
+    }
+
+    &__name {
+        margin-bottom: 8px;
+        font-size: 32px;
+        font-style: italic;
+        line-height: 38px;
+        text-align: center;
+        color: #191c2f;
+    }
+
+    &__des {
+        font-size: 17px;
+        line-height: 20px;
+        text-align: center;
+        color: #191c2f;
+    }
+}
+
+@media only screen and(max-width: 900px) {
+    .services {
+        padding: 50px 0;
+    
+        &__title {
+            font-size: 40px;
+            line-height: 50px;
+        }
+    
+        &__title--span {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    
+        &__list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    
+        &__item {
+            margin-bottom: 20px;
+        }
+    }
+}
