@@ -310,11 +310,14 @@ template {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -334,7 +337,134 @@ img {
 }
 
 .container {
+  width: 100%;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 0 20px;
-  max-width: __px;
+}
+
+.site-footer {
+  padding: 62px 0 25px 0;
+  background-color: #37474F;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  padding-bottom: 45px;
+  border-bottom: 0.5px solid #FFFFFF;
+}
+
+.footer__img-links {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+}
+
+.footer__img-links > svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.footer__img-links + .footer__img-links {
+  margin-left: 15px;
+}
+
+.tel1 {
+  display: inline-block;
+  margin-left: 24px;
+}
+
+.footer__tel {
+  font-size: 20px;
+  line-height: 23px;
+  /* identical to box height */
+  color: #A3A3A3;
+}
+
+.footer__tel + .footer__tel {
+  margin-left: 15px;
+}
+
+.footer__form {
+  padding-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__text {
+  font-size: 18px;
+  line-height: 21px;
+  color: #B8B8B8;
+}
+
+.footer__map {
+  padding: 8px 10px 8px 20px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.footer__map > p {
+  font-size: 18px;
+  line-height: 21px;
+  color: #B8B8B8;
+}
+
+.footer__map > a {
+  padding: 6px 11px 6px 15px;
+  font-size: 18px;
+  line-height: 21px;
+  background: #575757;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 720px) {
+  .footer {
+    align-items: flex-start;
+  }
+  .footer__links {
+    flex-direction: column;
+    text-align: left;
+  }
+  .footer-cosial {
+    margin-bottom: 45px;
+    text-align: left;
+    width: 100%;
+  }
+  .tel1 {
+    margin-left: 0;
+  }
+  .footer__form {
+    flex-direction: column;
+  }
+  .footer__text {
+    width: 100%;
+  }
+  .footer__map {
+    margin-top: 20px;
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
